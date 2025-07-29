@@ -1206,7 +1206,7 @@ async def txt_handler(bot: Client, m: Message):
     try:    
         with open(x, "r") as f:
             content = f.read()
-        content = content.split("\n")
+        content = content.split("")
         links = []
         for i in content:
             links.append(i.split("://", 1))
