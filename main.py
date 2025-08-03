@@ -592,7 +592,7 @@ async def txt_handler(bot: Client, m: Message):
                         cmd = f'yt-dlp -o "{name1}.{ext}" "{url}"'
                         download_cmd = f"{cmd} -R 25 --fragment-retries 25"
                         os.system(download_cmd)
-                        cc3 = f'**🖼️ IMG_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.{ext}\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
+                        cc3 = f'**🖼️ IMG_ID: {str(count).zfill(3)}.\n\n🗒 𝐓𝐢𝐭𝐥𝐞 **-** {name1} {my_name}.{ext}\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━{my_name}━━━━━**'
                         await bot.send_document(chat_id=m.chat.id, document=f'{name}.{ext}', caption=cc3)
                         count += 1
                         os.remove(f'{name}.{ext}')
@@ -607,7 +607,7 @@ async def txt_handler(bot: Client, m: Message):
                         cmd = f'yt-dlp -x --audio-format {ext} -o "{name}.{ext}" "{url}"'
                         download_cmd = f"{cmd} -R 25 --fragment-retries 25"
                         os.system(download_cmd)
-                        cc2 = f'**🎵 MP3_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.{ext}\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
+                        cc2 = f'**🎵 MP3_ID: {str(count).zfill(3)}.\n\n🗒 𝐓𝐢𝐭𝐥𝐞 **-** {name1} {my_name}.{ext}\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━{my_name}━━━━━**'
                         await bot.send_document(chat_id=m.chat.id, document=f'{name}.{ext}', caption=cc2)
                         count += 1
                         os.remove(f'{name}.{ext}')
@@ -620,7 +620,7 @@ async def txt_handler(bot: Client, m: Message):
                     try:
                         html_filename = f"{name}.html"
                         helper.download_html_file(url, html_filename)
-                        cc5 = f'**🌐 HTML_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.{ext}\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
+                        cc5 = f'**🌐 HTML_ID: {str(count).zfill(3)}.\n\n🗒 𝐓𝐢𝐭𝐥𝐞 **-** {name1} {my_name}.{ext}\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━{my_name}━━━━━**'
                         copy = await bot.send_document(chat_id=m.chat.id, document=html_filename, caption=cc5)
                         # Clean up files
                         os.remove(html_filename)              
@@ -664,7 +664,7 @@ async def txt_handler(bot: Client, m: Message):
                         continue                       
                           
                 else:
-                    Show = f"📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 »\n\n📝 Title:- `{name}\n\n**🔗 𝐓𝐨𝐭𝐚𝐥 𝐔𝐑𝐋 »** ✨{len(links)}✨\n\n⌨ 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 𓆩ᵢ𝚗fᵢ𝚗ᵢ𝚝y𓆪"
+                    Show = f"📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 »\n\n🗒 𝐓𝐢𝐭𝐥𝐞:- `{name}\n\n**🔗 𝐓𝐨𝐭𝐚𝐥 𝐔𝐑𝐋 »** ✨{len(links)}✨\n\n⌨ 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 𓆩ᵢ𝚗fᵢ𝚗ᵢ𝚝y𓆪"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
