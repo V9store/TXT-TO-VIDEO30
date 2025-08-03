@@ -439,12 +439,12 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name} {res}.mkv\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
-                cc1 = f'**📁 PDF_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.pdf\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
-                cyt = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.mkv\n\n📚 Batch Name: {b_name}\n\n**🔗 𝐕𝐢𝐝𝐞𝐨 𝐥𝐢𝐧𝐤 - ({url})**\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
-                ccp = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.mkv\n\n📚 Batch Name: {b_name}\n\n**🔗 𝐕𝐢𝐝𝐞𝐨 𝐥𝐢𝐧𝐤 - ({url})**\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
-                czip = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.mkv\n\n📚 Batch Name: {b_name}\n\n**🔗 𝐕𝐢𝐝𝐞𝐨 𝐥𝐢𝐧𝐤 - ({url})**\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
-                cczip = f'**💾 ZIP_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.pdf\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
+                cc = f'🎞️ 𝑽𝑰𝑫_𝑰𝑫 **- {str(count).zfill(3)}**\n\n🗒 𝐓𝐢𝐭𝐥𝐞 **- {name1}** {my_name} {res}.mkv\n\n📚 𝐁𝐚𝐭𝐜𝐡 **- {b_name}**\n\n📥 𝑬𝒙𝒕𝒓𝒂𝒄𝒕 𝑩𝒚 **-** {CR}\n\n━━━━━𓆩ᵢ𝚗𝘧ᵢ𝚗ᵢ𝚝𝘺𓆪━━━━━'
+                cc1 = f'📁 𝑷𝑫𝑭_𝑰𝑫: {str(count).zfill(3)}**\n\n🗒 𝐓𝐢𝐭𝐥𝐞 **- {name1}** {my_name}.pdf\n\n📚 𝐁𝐚𝐭𝐜𝐡 **- {b_name}**\n\n📥 𝑬𝒙𝒕𝒓𝒂𝒄𝒕 𝑩𝒚 **-** {CR}\n\n━━━━━𓆩ᵢ𝚗𝘧ᵢ𝚗ᵢ𝚝𝘺𓆪━━━━━'
+                cyt = f'🎞️ 𝑽𝑰𝑫_𝑰𝑫 **- {str(count).zfill(3)}**\n\n🗒 𝐓𝐢𝐭𝐥𝐞 **- {name1}** {my_name}.mkv\n\n📚 𝐁𝐚𝐭𝐜𝐡 **- {b_name}**\n\n🔗 𝐕𝐢𝐝𝐞𝐨 𝐥𝐢𝐧𝐤 - ({url})**\n\n📥 𝑬𝒙𝒕𝒓𝒂𝒄𝒕 𝑩𝒚 **-** {CR}\n\n━━━━━𓆩ᵢ𝚗𝘧ᵢ𝚗ᵢ𝚝𝘺𓆪━━━━━'
+                ccp = f'🎞️ 𝑽𝑰𝑫_𝑰𝑫 **- {str(count).zfill(3)}**\n\n🗒 𝐓𝐢𝐭𝐥𝐞 **- {name1}** {my_name}.mkv\n\n📚 𝐁𝐚𝐭𝐜𝐡 **- {b_name}**\n\n🔗 𝐕𝐢𝐝𝐞𝐨 𝐥𝐢𝐧𝐤 - ({url})**\n\n📥 𝑬𝒙𝒕𝒓𝒂𝒄𝒕 𝑩𝒚 **-** {CR}\n\n━━━━━𓆩ᵢ𝚗𝘧ᵢ𝚗ᵢ𝚝𝘺𓆪━━━━━'
+                czip = f'🎞️ 𝑽𝑰𝑫_𝑰𝑫 **- {str(count).zfill(3)}**\n\n🗒 𝐓𝐢𝐭𝐥𝐞 **- {name1}** {my_name}.mkv\n\n📚 𝐁𝐚𝐭𝐜𝐡 **- {b_name}**\n\n🔗 𝐕𝐢𝐝𝐞𝐨 𝐥𝐢𝐧𝐤 - ({url})**\n\n📥 𝑬𝒙𝒕𝒓𝒂𝒄𝒕 𝑩𝒚 **-** {CR}\n\n━━━━━𓆩ᵢ𝚗𝘧ᵢ𝚗ᵢ𝚝𝘺𓆪━━━━━'
+                cczip = f'💾 ZIP_ID:** {str(count).zfill(3)}**\n\n🗒 𝐓𝐢𝐭𝐥𝐞 **- {name1}** {my_name}.pdf\n\n📚 𝐁𝐚𝐭𝐜𝐡 **- {b_name}**\n\n📥 𝑬𝒙𝒕𝒓𝒂𝒄𝒕 𝑩𝒚 **-** {CR}\n\n━━━━━𓆩ᵢ𝚗𝘧ᵢ𝚗ᵢ𝚝𝘺𓆪━━━━━'
                     
                 
                 if "drive" in url:
@@ -1110,8 +1110,8 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**<pre><code>🎞️ 𝐕𝐈𝐃_𝐈𝐃: {str(count).zfill(3)}.</code></pre>\n\n<pre><code>📝 𝐓𝐈𝐓𝐋𝐄:👇🏻</code></pre>\n<pre><code>{name1} {res} .mkv</code></pre>\n\n<pre><code>📚 𝐁𝐀𝐓𝐂𝐇 𝐍𝐀𝐌𝐄:👇🏻</code>\n</pre><pre><code>{b_name}</code></pre>\n\n<pre><code>✨𝐄𝐗𝐓𝐑𝐀𝐂𝐓𝐄𝐃 𝐁𝐘 : {CR}</code></pre>**\n\n<pre><code>━━━━━𓆩ᵢ𝚗fᵢ𝚗ᵢ𝚝y𓆪━━━━━</code></pre>'
-                cc1 = f'**<pre><code>📁 𝐏𝐃𝐅_𝐈𝐃: {str(count).zfill(3)}.</code></pre>\n\n<pre><code>📝 𝐓𝐈𝐓𝐋𝐄:👇🏻</code></pre>\n<pre><code>{name1} .pdf</code></pre>\n\n<pre><code>📚 𝐁𝐀𝐓𝐂𝐇 𝐍𝐀𝐌𝐄:👇🏻</code>\n</pre><pre><code>{b_name}</code></pre>\n\n<pre><code>✨𝐄𝐗𝐓𝐑𝐀𝐂𝐓𝐄𝐃 𝐁𝐘 : {CR}</code></pre>**\n\n<pre><code>━━━━━𓆩ᵢ𝚗fᵢ𝚗ᵢ𝚝y𓆪━━━━━</code></pre>'
+                cc = f'**<pre><code>🎞️ 𝐕𝐈𝐃_𝐈𝐃: {str(count).zfill(3)}.</code></pre>\n\n<pre><code>📝 𝐓𝐈𝐓𝐋𝐄:👇🏻</code></pre>\n<pre><code>{name1} {res} .mkv</code></pre>\n\n<pre><code>📚 𝐁𝐀𝐓𝐂𝐇 𝐍𝐀𝐌𝐄:👇🏻</code>\n</pre><pre><code>{b_name}</code></pre>\n\n<pre><code>✨𝑬𝒙𝒕𝒓𝒂𝒄𝒕 𝑩𝒚 : {CR}</code></pre>**\n\n<pre><code>━━━━━𓆩ᵢ𝚗fᵢ𝚗ᵢ𝚝y𓆪━━━━━</code></pre>'
+                cc1 = f'**<pre><code>📁 𝐏𝐃𝐅_𝐈𝐃: {str(count).zfill(3)}.</code></pre>\n\n<pre><code>📝 𝐓𝐈𝐓𝐋𝐄:👇🏻</code></pre>\n<pre><code>{name1} .pdf</code></pre>\n\n<pre><code>📚 𝐁𝐀𝐓𝐂𝐇 𝐍𝐀𝐌𝐄:👇🏻</code>\n</pre><pre><code>{b_name}</code></pre>\n\n<pre><code>✨𝑬𝒙𝒕𝒓𝒂𝒄𝒕 𝑩𝒚 : {CR}</code></pre>**\n\n<pre><code>━━━━━𓆩ᵢ𝚗fᵢ𝚗ᵢ𝚝y𓆪━━━━━</code></pre>'
                     
                 
                 if "drive" in url:
